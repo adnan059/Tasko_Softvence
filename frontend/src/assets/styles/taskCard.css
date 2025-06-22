@@ -1,0 +1,57 @@
+.taskCard {
+  padding: 20px 22px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+}
+
+.taskCard .title-desc {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 0.9rem;
+  text-transform: capitalize;
+}
+
+.taskCard .title-desc .taskIcon img {
+  width: 32px;
+  aspect-ratio: 1/1;
+  margin-top: 5px;
+}
+
+.taskCard .title-desc .texts h2 {
+  font-size: 2.5rem;
+  font-family: var(--poppins);
+  font-weight: 600;
+}
+
+.taskCard .title-desc .texts p {
+  font-family: var(--poppins);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 164%;
+  letter-spacing: 0%;
+  color: #667085;
+}
+
+.taskCard .date-status {
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.taskCard .date-status > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.taskCard .date-status > div span {
+  font-family: var(--poppins);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 164%;
+  letter-spacing: 0%;
+}

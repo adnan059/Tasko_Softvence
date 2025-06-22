@@ -1,0 +1,17 @@
+.addTask .addTaskBtn {
+  background-color: #60e5ae;
+  padding: 12px 24px;
+  font-family: var(--jakarta);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 164%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  border-radius: 8px;
+  cursor: pointer;
+}

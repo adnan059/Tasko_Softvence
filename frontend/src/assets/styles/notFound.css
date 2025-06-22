@@ -1,0 +1,35 @@
+.notFound .bg {
+  background: url("../images/main-bg.png");
+  height: 174px;
+}
+
+.notFound .content {
+  max-width: 1320px;
+  margin-inline: auto;
+  margin-top: -5rem;
+  background-color: white;
+  border-radius: 15px;
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.notFound .content .image img {
+  width: 100%;
+}
+
+.notFound .content button {
+  background-color: #60e5ae;
+  padding: 15px 100px;
+  font-family: var(--jakarta);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 164%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: capitalize;
+  border-radius: 8px;
+  margin-top: 6rem;
+}

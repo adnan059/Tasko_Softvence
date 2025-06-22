@@ -1,0 +1,37 @@
+.pickTask {
+  padding: 39px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.pickTask h1 {
+  font-family: var(--poppins);
+  font-weight: 600;
+}
+
+.pickTask p {
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 132%;
+  letter-spacing: -2%;
+}
+
+.pickTask .spinBtn {
+  background-color: #60e5ae;
+  padding: 16px 40px;
+  border-radius: 8px;
+  font-family: var(--jakarta);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 164%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}

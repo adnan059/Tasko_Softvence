@@ -1,0 +1,72 @@
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.signup .imageContainer {
+  flex: 1;
+  height: 100vh;
+}
+
+.signup .formContainer {
+  padding-inline: 2rem;
+  flex: 1;
+}
+
+.signup .formContainer .title {
+  text-align: center;
+}
+
+.signup .formContainer .title h1 {
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: 4rem;
+  color: #1f1f1f;
+  line-height: 132%;
+  letter-spacing: -2%;
+}
+
+.signup .formContainer .title p {
+  font-family: var(--jakarta);
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 164%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #667085;
+  margin-top: 3px;
+}
+
+.signup .navigateToLogin {
+  text-align: center;
+}
+
+.signup .navigateToLogin p {
+  color: #667085;
+  font-family: var(--jakarta);
+}
+
+.signup .navigateToLogin p a {
+  color: #1f1f1f;
+  font-weight: 600;
+}
+
+@media (max-width: 1150px) {
+  .signup .imageContainer {
+    width: 45%;
+  }
+  .signup .imageContainer img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .signup .imageContainer {
+    display: none;
+  }
+}

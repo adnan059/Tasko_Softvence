@@ -1,0 +1,57 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  max-width: 1320px;
+  margin-inline: auto;
+}
+
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+header .logo a {
+  font-size: 2.4rem;
+  font-weight: 600;
+  font-family: var(--poppins);
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+header nav ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+header nav ul li a span {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+header .headerMenu .userName {
+  color: white;
+  margin-inline: 0.5rem;
+  font-family: var(--jakarta);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 164%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+}
+
+@media (max-width: 650px) {
+  header nav ul {
+    gap: 20px;
+  }
+}

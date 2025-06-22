@@ -1,0 +1,36 @@
+.taskList {
+  margin-top: 43px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+  gap: 20px 30px;
+  justify-content: space-evenly;
+}
+
+.emptyTaskList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 1.5rem;
+  gap: 1rem;
+}
+
+.emptyTaskList .image img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+.emptyTaskList h2 {
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 132%;
+  letter-spacing: -2%;
+}
+
+@media (max-width: 450px) {
+  .taskList {
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  }
+}
