@@ -11,7 +11,7 @@ const Header = () => {
     <header>
       <div className="logo">
         <img src={clock} alt="" />
-        <Link to={"/"}>Tasko</Link>
+        <a href={"/"}>Tasko</a>
       </div>
 
       <nav>

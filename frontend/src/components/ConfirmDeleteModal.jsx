@@ -9,7 +9,6 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   maxWidth: "400px",
-
   width: "100%",
   bgcolor: "#fff",
   borderRadius: "16px",
@@ -17,7 +16,6 @@ const style = {
   p: 4,
   textAlign: "center",
   outline: "none",
-  marginInline: "1rem",
 };
 
 const ConfirmDeleteModal = ({ open, handleClose, handleConfirm }) => {
@@ -32,14 +30,17 @@ const ConfirmDeleteModal = ({ open, handleClose, handleConfirm }) => {
           <CloseIcon />
         </IconButton>
 
-        <img
-          src={confirmDelete}
-          alt=""
-          style={{
-            display: "block",
-            marginInline: "auto",
-          }}
-        />
+        <div className="confirmDeleteImage">
+          <img
+            src={confirmDelete}
+            alt=""
+            style={{
+              display: "block",
+              marginInline: "auto",
+            }}
+            width={"100%"}
+          />
+        </div>
 
         {/* Heading */}
         <Typography
@@ -76,7 +77,7 @@ const ConfirmDeleteModal = ({ open, handleClose, handleConfirm }) => {
             color="error"
             onClick={handleConfirm}
             sx={{
-              padding: "10px 30px",
+              padding: "5px 30px",
               fontSize: "1.6rem",
               fontWeight: "500",
               backgroundColor: "#60E5AE",
@@ -89,7 +90,7 @@ const ConfirmDeleteModal = ({ open, handleClose, handleConfirm }) => {
             variant="outlined"
             onClick={handleClose}
             sx={{
-              padding: "10px 30px",
+              padding: "5px 30px",
               fontSize: "1.6rem",
               fontWeight: "500",
               backgroundColor: "#FF4C2426",

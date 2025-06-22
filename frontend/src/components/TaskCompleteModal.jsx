@@ -2,6 +2,7 @@ import React from "react";
 
 import { Modal, Box, Typography, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+import "../assets/styles/taskCompleteModal.css";
 
 import taskDone from "../assets/images/taskDone.png";
 
@@ -10,7 +11,8 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-
+  maxWidth: "450px",
+  width: "100%",
   bgcolor: "#fff",
   borderRadius: "16px",
   boxShadow: 24,
