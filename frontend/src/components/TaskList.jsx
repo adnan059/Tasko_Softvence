@@ -14,7 +14,7 @@ const TaskList = () => {
   useEffect(() => {
     getAllTasks();
   }, []);
-  if (loading) return <h2>Loading...</h2>;
+  if (loading) return <h1 style={{ marginBlock: "2rem" }}>Loading...</h1>;
   // console.log(taskList);
 
   return (
