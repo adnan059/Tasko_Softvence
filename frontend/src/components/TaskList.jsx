@@ -21,11 +21,7 @@ const TaskList = () => {
     <div className="taskList">
       {taskList.length < 1 && <EmptyTaskList />}
       {taskList?.map((task) => (
-        <Link
-          to={`/task/${task?._id}`}
-          key={task?._id}
-          state={{ initialStatus: task?.status }}
-        >
+        <Link to={`/task/${task?._id}`} key={task?._id}>
           <TaskCard task={task} />
         </Link>
       ))}

@@ -15,7 +15,7 @@ import CircleIcon from "@mui/icons-material/Circle";
 import taskIcon from "../assets/images/task-icon.png";
 import EditCalendarOutlinedIcon from "@mui/icons-material/EditCalendarOutlined";
 
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import useTask from "../hooks/useTask";
 import { useDispatch, useSelector } from "react-redux";
 import { formatDate } from "./../utils/helper";
@@ -48,9 +48,8 @@ const statusArray = [
 ];
 
 const SingleTaskPage = () => {
-  const { state } = useLocation();
   const { selectedTask } = useSelector((state) => state.task);
-  const [status, setStatus] = useState(state.initialStatus);
+  const [status, setStatus] = useState(selectedTask?.status);
   const { id } = useParams();
   const { getTaskById, loading, updateTaskById, deleteTaskById } = useTask();
   const [modalOpen, setModalOpen] = useState(false);
@@ -67,6 +66,10 @@ const SingleTaskPage = () => {
   useEffect(() => {
     return () => dispatch(setSelectedTask(null));
   }, []);
+
+  useEffect(() => {
+    setStatus(selectedTask?.status);
+  }, [selectedTask]);
 
   const handleChange = (event) => {
     setStatus(event.target.value);
