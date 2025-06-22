@@ -22,6 +22,7 @@ import { formatDate } from "./../utils/helper";
 import TaskCompleteModal from "../components/TaskCompleteModal";
 import ConfirmDeleteModal from "../components/ConfirmDeleteModal";
 import { setSelectedTask } from "../redux/taskSlice";
+import EditTask from "../components/EditTask";
 
 const statusArray = [
   {
@@ -99,7 +100,7 @@ const SingleTaskPage = () => {
         <h2>Task Details</h2>
         <div className="task-actions">
           <span className="points">20 Points</span>
-          <button className="edit-btn">✏️ Edit Task</button>
+          <EditTask />
           <button onClick={() => navigate("/")} className="back-btn">
             Back
           </button>
