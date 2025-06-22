@@ -185,7 +185,7 @@ const CreateTaskDrawer = ({ open, onClose, onSubmitTask }) => {
               fontWeight: "bold",
               paddingY: "10px",
               background: "#60e5ae",
-              color: "black",
+              color: "#1F1F1F",
             }}
           >
             Create Task

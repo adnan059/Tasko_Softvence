@@ -22,9 +22,11 @@ const TaskCard = ({ task }) => {
           <EditCalendarOutlinedIcon />
           <span>{formatDate(task?.endDate)}</span>
         </div>
-        <div className="status">
-          <CircleIcon />
-          <span>{task?.status}</span>
+        <div className={`status ${task?.status}`}>
+          <CircleIcon className="dot" />
+          <span>
+            {task?.status === "ongoing" ? "In Progress" : task?.status}
+          </span>
         </div>
       </div>
     </div>

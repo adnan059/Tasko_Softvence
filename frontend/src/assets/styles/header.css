@@ -55,3 +55,12 @@ header .headerMenu .userName {
     gap: 20px;
   }
 }
+
+@media (max-width: 500px) {
+  header .headerMenu .userName {
+    display: none;
+  }
+  header .logo img {
+    display: none;
+  }
+}

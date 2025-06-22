@@ -49,7 +49,7 @@
 .back-btn {
   background-color: #4ee69c;
 
-  color: black;
+  color: #1f1f1f;
 }
 
 .task-content {
@@ -103,7 +103,7 @@
   font-size: 18px;
   line-height: 132%;
   letter-spacing: -2%;
-  color: black;
+  color: #1f1f1f;
 }
 
 .task-date > div {
@@ -127,8 +127,7 @@
   gap: 8px;
 }
 
-.status-label {
-  color: #dd9221;
+.task-status span {
   font-family: var(--poppins);
   font-weight: 500;
   font-size: 32.23px;
@@ -138,9 +137,27 @@
   text-transform: capitalize;
 }
 
+.task-status .dot {
+  margin-right: 0.5rem;
+}
+.task-status.pending span,
+.task-status.pending .dot {
+  color: #e343e6;
+}
+
+.task-status.ongoing span,
+.task-status.ongoing .dot {
+  color: #dd9221;
+}
+
+.task-status.done span,
+.task-status.done .dot {
+  color: #21d789;
+}
+
 .task-dropdown {
   margin-top: 60px;
-  width: 300px;
+  width: 200px;
 }
 
 .task-dropdown label {
@@ -172,7 +189,7 @@
 
 .submit-btn {
   background-color: #60e5ae;
-  color: black;
+  color: #1f1f1f;
   border: none;
   padding: 10px 24px;
   border-radius: 8px;

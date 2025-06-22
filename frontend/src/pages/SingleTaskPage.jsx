@@ -107,7 +107,7 @@ const SingleTaskPage = () => {
       </div>
 
       {loading ? (
-        <h1 style={{ marginBlock: "2rem" }}>Loading...</h1>
+        <h2 style={{ marginBlock: "2rem" }}>Loading...</h2>
       ) : (
         <div className="task-content">
           <div className="task-icon">
@@ -125,15 +125,20 @@ const SingleTaskPage = () => {
                   <span>{formatDate(selectedTask?.endDate)}</span>
                 </div>
               </div>
-              <div className="task-status">
-                <CircleIcon sx={{ fill: "#dd9221", marginRight: "5px" }} />
-                <span className="status-label">{selectedTask?.status}</span>
+              <div className={`task-status ${selectedTask?.status}`}>
+                <CircleIcon className="dot" />
+                <span>{selectedTask?.status}</span>
               </div>
             </div>
 
             <div className="task-dropdown">
               <label>Change Status</label>
-              <FormControl fullWidth sx={{ marginTop: "1rem" }}>
+              <FormControl
+                fullWidth
+                sx={{
+                  marginTop: "2rem",
+                }}
+              >
                 <Select
                   value={status}
                   onChange={handleChange}

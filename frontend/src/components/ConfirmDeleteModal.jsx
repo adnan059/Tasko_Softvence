@@ -80,7 +80,7 @@ const ConfirmDeleteModal = ({ open, handleClose, handleConfirm }) => {
               fontSize: "1.6rem",
               fontWeight: "500",
               backgroundColor: "#60E5AE",
-              color: "black",
+              color: "#1F1F1F",
             }}
           >
             Yes

@@ -55,3 +55,18 @@
   line-height: 164%;
   letter-spacing: 0%;
 }
+
+.taskCard .date-status .status.pending span,
+.taskCard .date-status .status.pending .dot {
+  color: #e343e6;
+}
+
+.taskCard .date-status .status.ongoing span,
+.taskCard .date-status .status.ongoing .dot {
+  color: #dd9221;
+}
+
+.taskCard .date-status .status.done span,
+.taskCard .date-status .status.done .dot {
+  color: #21d789;
+}
