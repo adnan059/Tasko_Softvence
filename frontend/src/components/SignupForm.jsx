@@ -72,7 +72,17 @@ const SignUpForm = () => {
         <Typography sx={labelStyle}>Full Name</Typography>
         <TextField
           placeholder="Enter your full name"
-          {...register("fullName", { required: "Full name is required" })}
+          {...register("fullName", {
+            required: "Full name is required",
+            minLength: {
+              value: 2,
+              message: "Full name must be at least 2 characters",
+            },
+            maxLength: {
+              value: 30,
+              message: "Full name must be less than 30 characters",
+            },
+          })}
           error={!!errors.fullName}
           helperText={errors.fullName?.message}
           fullWidth
