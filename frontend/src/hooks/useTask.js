@@ -49,6 +49,7 @@ const useTask = () => {
       dispatch(setTaskList(newTaskList));
 
       setLoading(false);
+      toast.success("Task Created Successfully", { autoClose: 1600 });
     } catch (error) {
       toast.error(error.response.data.errors[0].msg, { autoClose: 1600 });
       setLoading(false);
