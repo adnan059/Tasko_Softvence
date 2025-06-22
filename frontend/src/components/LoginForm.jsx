@@ -95,7 +95,7 @@ const LoginForm = () => {
             pattern: {
               value: passwordRegex,
               message:
-                "Password must be 8+ chars, include an uppercase letter and a number",
+                "Password length must be 8 or more, include uppercase letter, lowercase letter and number",
             },
           })}
           error={!!errors.password}
