@@ -90,6 +90,8 @@ const useTask = () => {
       dispatch(setTaskList([...newTaskList, data]));
 
       setLoading(false);
+
+      toast.success("Task Updated Successfully", { autoClose: 1600 });
     } catch (error) {
       toast.error(error.response.data.message);
       console.log(error);

@@ -35,7 +35,7 @@ const EditTaskDrawer = ({ open, onClose, onSubmitTask }) => {
   const onSubmit = async (data) => {
     const endDate = new Date(data?.endDate).toISOString();
     const taskData = { ...data, endDate };
-    console.log("=======>", taskData);
+
     await onSubmitTask(taskData);
     onClose();
   };
