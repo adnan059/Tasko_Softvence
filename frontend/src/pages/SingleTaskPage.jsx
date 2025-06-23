@@ -111,7 +111,9 @@ const SingleTaskPage = () => {
       </div>
 
       {loading ? (
-        <h2 style={{ marginBlock: "2rem" }}>Loading...</h2>
+        <h2 style={{ marginBlock: "2rem", fontFamily: "var(--jakarta)" }}>
+          Loading...
+        </h2>
       ) : (
         <div className="task-content">
           <div className="task-icon">
