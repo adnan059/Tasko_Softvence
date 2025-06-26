@@ -27,6 +27,7 @@ const EditTaskDrawer = ({ open, onClose, onSubmitTask }) => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm({ mode: "onTouched" });
 
   const { loading } = useTask();
@@ -37,6 +38,8 @@ const EditTaskDrawer = ({ open, onClose, onSubmitTask }) => {
     const taskData = { ...data, endDate };
 
     await onSubmitTask(taskData);
+
+    reset();
     onClose();
   };
 
