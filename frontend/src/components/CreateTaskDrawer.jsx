@@ -25,12 +25,14 @@ const CreateTaskDrawer = ({ open, onClose, onSubmitTask }) => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm({ mode: "onTouched" });
 
   const onSubmit = async (data) => {
     const endDate = new Date(data?.endDate).toISOString();
     const taskData = { ...data, endDate };
     await onSubmitTask(taskData);
+    reset();
     onClose();
   };
 
