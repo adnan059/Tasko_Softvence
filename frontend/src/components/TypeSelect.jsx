@@ -46,19 +46,16 @@ const TypeSelect = () => {
 
   return (
     <FormControl sx={{ width: 200 }}>
-      <InputLabel sx={{ fontSize: "16px" }} id="category-select-label">
-        Select Task Category
+      <InputLabel sx={{ fontSize: "16px" }} id="type-select-label">
+        Select Task Type
       </InputLabel>
       <Select
-        labelId="category-select-label"
-        id="category-select"
+        labelId="type-select-label"
+        id="type-select"
         value={selectedType}
         onChange={handleChange}
         input={
-          <OutlinedInput
-            label="Select Task Category"
-            sx={{ fontSize: "16px" }}
-          />
+          <OutlinedInput label="Select Task Type" sx={{ fontSize: "16px" }} />
         }
         renderValue={(selected) => selected}
       >
