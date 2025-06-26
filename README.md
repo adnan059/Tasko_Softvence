@@ -32,6 +32,35 @@ A task management application built with React, Material UI, React Hook Form, Ex
 - Express-validator (Input Validation)
 
 ---
+## 📸 Screenshots
+
+### Task List
+![All Tasks Screenshot](screenshots/tasks.png)
+
+### Task Details
+![Single Task Details Screenshot](screenshots/details.png)
+
+### Create Task
+![Create Screenshot](screenshots/create.png)
+
+### Edit Task
+![Edit Screenshot](screenshots/edit.png)
+
+### Complete Confirmation
+![Complete Confirmation Screenshot](screenshots/done.png)
+
+### Delete Confirmation
+![Delete Confirmation Screenshot](screenshots/delete.png)
+
+### Empty Task List
+![Empty Screenshot](screenshots/no-tasks.png)
+
+### Not Found Page
+![Empty Screenshot](screenshots/not-found.png)
+
+> 📂 All screenshots are located in the `screenshots/` folder.
+
+---
 
 ## ✨ Features
 - Add, edit, and delete tasks  
